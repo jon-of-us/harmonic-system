@@ -4,30 +4,17 @@ Generate a minimalistic piano octave SVG with proper black key positioning.
 In the top portion, all 12 keys (7 white + 5 black) are evenly spaced.
 """
 
-new_note_names = {
-    'C': '4',
-    'C#': '11',
-    'D': '6',
-    'D#': '1',
-    'E': '8',
-    'F': '3',
-    'F#': '10',
-    'G': '5',
-    'G#': '0',
-    'A': '7',
-    'A#': '2',
-    'B': '9'
-}
+import config
 
 def generate_piano_svg(
-    octave_width=200,
-    key_height=100, 
+    octave_width=400,
+    key_height=200, 
     black_key_height_ratio=0.65,
-    canvas_padding=20,
-    stroke_width=2,
-    white_fill="none",
-    black_fill="black",
-    stroke_color="black"
+    canvas_padding=config.canvas_padding,
+    stroke_width=config.stroke_width,
+    white_fill=config.white_fill,
+    black_fill=config.black_fill,
+    stroke_color=config.stroke_color
 ):
     
     # Calculate dimensions
@@ -71,7 +58,7 @@ def generate_piano_svg(
         x = Ab_position + pos * semitone_width - semitone_width / 2
         y = canvas_padding
         svg += f'''
-  <rect x="{x}" y="{y}" width="{semitone_width}" height="{black_key_height}" fill="{black_fill}" stroke-width="0"/>  <!-- {note} -->'''
+  <rect x="{x}" y="{y}" width="{semitone_width}" height="{black_key_height}" fill="{black_fill}" stroke="{stroke_color}" stroke-width="{stroke_width}"/>  <!-- {note} -->'''
     
     svg += '''
   
@@ -82,9 +69,9 @@ def generate_piano_svg(
     for i, note in enumerate(white_keys):
         x = canvas_padding + i * white_key_width + white_key_width / 2
         y = canvas_padding + key_height - font_size /2
-        label = new_note_names[note]
+        label = config.new_note_names[note]
         svg += f'''
-  <text x="{x}" y="{y}" font-family="sans-serif" font-size="{font_size}" fill="{stroke_color}" text-anchor="middle" font-weight="bold">{label}</text>'''
+  <text x="{x}" y="{y}" font-family="{config.font_family}" font-size="{font_size}" fill="{stroke_color}" text-anchor="middle" font-weight="{config.font_weight}">{label}</text>'''
     
     svg += '''
   
@@ -94,9 +81,9 @@ def generate_piano_svg(
     for pos, note in zip(black_key_positions, black_key_names):
         x = Ab_position + pos * semitone_width
         y = canvas_padding + black_key_height - font_size / 2
-        label = new_note_names[note]
+        label = config.new_note_names[note]
         svg += f'''
-  <text x="{x}" y="{y}" font-family="sans-serif" font-size="{font_size}" fill="white" text-anchor="middle" font-weight="bold">{label}</text>'''
+  <text x="{x}" y="{y}" font-family="{config.font_family}" font-size="{font_size}" fill="white" text-anchor="middle" font-weight="{config.font_weight}">{label}</text>'''
     
     svg += '''
 </svg>'''

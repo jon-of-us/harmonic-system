@@ -6,27 +6,22 @@ In the top portion, all 12 keys (7 white + 5 black) are evenly spaced.
 
 import config
 
-def generate_piano_svg(
-    octave_width=400,
-    key_height=200, 
-    black_key_height_ratio=0.65,
-    canvas_padding=config.canvas_padding,
-    stroke_width=config.stroke_width,
-    white_fill=config.white_fill,
-    black_fill=config.black_fill,
-    stroke_color=config.stroke_color
-):
+OCTAVE_WIDTH=400 
+KEY_HEIGHT=200 
+BLACK_KEY_HEIGHT_RATIO=0.65
+
+def generate_piano_svg():
     
     # Calculate dimensions
-    white_key_width = octave_width / 7
-    black_key_height = key_height * black_key_height_ratio
+    white_key_width = OCTAVE_WIDTH / 7
+    black_key_height = KEY_HEIGHT * BLACK_KEY_HEIGHT_RATIO
     
     # In the top portion, all 12 semitones are evenly spaced
-    semitone_width = octave_width / 12
+    semitone_width = OCTAVE_WIDTH / 12
     
     # Canvas dimensions
-    canvas_width = (white_key_width * 7) + 2 * canvas_padding
-    canvas_height = key_height + 2 * canvas_padding
+    canvas_width = (white_key_width * 7) + 2 * config.CANVAS_PADDING
+    canvas_height = KEY_HEIGHT + 2 * config.CANVAS_PADDING
     
     # SVG header
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -39,10 +34,10 @@ def generate_piano_svg(
     # White key positions and labels
     white_keys = ['C', 'D', 'E', 'F', 'G', 'A', 'B']  
     for i, note in enumerate(white_keys):
-        x = canvas_padding + i * white_key_width
-        y = canvas_padding
+        x = config.CANVAS_PADDING + i * white_key_width
+        y = config.CANVAS_PADDING
         svg += f'''
-  <rect x="{x}" y="{y}" width="{white_key_width}" height="{key_height}" fill="{white_fill}" stroke="{stroke_color}" stroke-width="{stroke_width}"/>  <!-- {note} -->'''
+  <rect x="{x}" y="{y}" width="{white_key_width}" height="{KEY_HEIGHT}" fill="none" stroke="{config.COLOR}" stroke-width="{config.STROKE_WIDTH}"/>  <!-- {note} -->'''
     
     svg += '''
   
@@ -51,27 +46,26 @@ def generate_piano_svg(
     # Black key positions: C#=1, D#=3, F#=6, G#=8, A#=10 (semitone positions)
     black_key_positions = [-7, -5, -2, 0, 2]  # relatve to Ab in semitones 
     black_key_names = ['C#', 'D#', 'F#', 'G#', 'A#']
-    Ab_position = canvas_padding + (white_key_width * 5)
+    Ab_position = config.CANVAS_PADDING + (white_key_width * 5)
     
     for pos, note in zip(black_key_positions, black_key_names):
         # Position black key at its semitone position, centered
         x = Ab_position + pos * semitone_width - semitone_width / 2
-        y = canvas_padding
+        y = config.CANVAS_PADDING
         svg += f'''
-  <rect x="{x}" y="{y}" width="{semitone_width}" height="{black_key_height}" fill="{black_fill}" stroke="{stroke_color}" stroke-width="{stroke_width}"/>  <!-- {note} -->'''
+  <rect x="{x}" y="{y}" width="{semitone_width}" height="{black_key_height}" fill="{config.COLOR}" stroke="{config.COLOR}" stroke-width="{config.STROKE_WIDTH}"/>  <!-- {note} -->'''
     
     svg += '''
   
   <!-- White key labels -->'''
     
     # Add labels to white keys (black text)
-    font_size = min(white_key_width * 0.4, key_height * 0.15)
     for i, note in enumerate(white_keys):
-        x = canvas_padding + i * white_key_width + white_key_width / 2
-        y = canvas_padding + key_height - font_size /2
-        label = config.new_note_names[note]
+        x = config.CANVAS_PADDING + i * white_key_width + white_key_width / 2
+        y = config.CANVAS_PADDING + KEY_HEIGHT - config.FONT_SIZE / 2
+        label = config.NEW_NOTE_NAMES[note]
         svg += f'''
-  <text x="{x}" y="{y}" font-family="{config.font_family}" font-size="{font_size}" fill="{stroke_color}" text-anchor="middle" font-weight="{config.font_weight}">{label}</text>'''
+  <text x="{x}" y="{y}" font-family="{config.FONT_FAMILY}" font-size="{config.FONT_SIZE}" fill="{config.COLOR}" text-anchor="middle" font-weight="{config.FONT_WEIGHT}">{label}</text>'''
     
     svg += '''
   
@@ -80,10 +74,10 @@ def generate_piano_svg(
     # Add labels to black keys (white text)
     for pos, note in zip(black_key_positions, black_key_names):
         x = Ab_position + pos * semitone_width
-        y = canvas_padding + black_key_height - font_size / 2
-        label = config.new_note_names[note]
+        y = config.CANVAS_PADDING + black_key_height - config.FONT_SIZE / 2
+        label = config.NEW_NOTE_NAMES[note]
         svg += f'''
-  <text x="{x}" y="{y}" font-family="{config.font_family}" font-size="{font_size}" fill="white" text-anchor="middle" font-weight="{config.font_weight}">{label}</text>'''
+  <text x="{x}" y="{y}" font-family="{config.FONT_FAMILY}" font-size="{config.FONT_SIZE}" fill="white" text-anchor="middle" font-weight="{config.FONT_WEIGHT}">{label}</text>'''
     
     svg += '''
 </svg>'''

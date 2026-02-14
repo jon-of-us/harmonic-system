@@ -3,7 +3,7 @@ Shared configuration for music visualization scripts.
 """
 
 # New note name mapping
-new_note_names = {
+NEW_NOTE_NAMES = {
     'C': '4',
     'C#': '11',
     'D': '6',
@@ -19,12 +19,11 @@ new_note_names = {
 }
 
 # Visual settings
-stroke_width = 4
-stroke_color = "black"
-white_fill = "none"
-black_fill = "black"
-canvas_padding = 20
+STROKE_WIDTH = 4
+COLOR = "black"
+CANVAS_PADDING = 20
 
 # Font settings
-font_family = "sans-serif"
-font_weight = "bold"
+FONT_FAMILY = "sans-serif"
+FONT_WEIGHT = "bold"
+FONT_SIZE = 20

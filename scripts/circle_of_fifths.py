@@ -7,40 +7,25 @@ import math
 import config
 
 # Circle of fifths order (clockwise from top, starting at C)
-circle_of_fifths_order = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#', 'G#', 'D#', 'A#', 'F']
+CIRCLE_OF_FIFTH_ORDER = ['C', 'G', 'D', 'A', 'E', 'B', 'F#', 'C#', 'G#', 'D#', 'A#', 'F']
+CIRCLE_RADIUS=100
+SPACING=60
 
 def generate_circle_of_fifths_comparison_svg(
-    circle_radius=100,
-    canvas_padding=config.canvas_padding,
-    stroke_width=config.stroke_width,
-    stroke_color=config.stroke_color,
-    fill_color="none",
-    spacing=30
 ):
-    """
-    Generate a circle of fifths comparison SVG with traditional on left, new notation on right.
-    
-    Args:
-        circle_radius: Radius of each circle
-        canvas_padding: Padding around the circles
-        stroke_width: Width of circle stroke
-        stroke_color: Color for strokes and text
-        fill_color: Fill color for the circles
-        spacing: Space between the two circles
-    """
     
     # Canvas dimensions
-    single_circle_size = circle_radius * 2
-    canvas_width = (single_circle_size * 2) + spacing + (canvas_padding * 2)
-    canvas_height = single_circle_size + (canvas_padding * 2)
+    single_circle_size = CIRCLE_RADIUS * 2
+    canvas_width = (single_circle_size * 2) + SPACING + (config.CANVAS_PADDING * 2)
+    canvas_height = single_circle_size + (config.CANVAS_PADDING * 2)
     
     # Centers for both circles
-    left_center_x = canvas_padding + circle_radius
-    right_center_x = canvas_padding + single_circle_size + spacing + circle_radius
-    center_y = canvas_padding + circle_radius
+    left_center_x = config.CANVAS_PADDING + CIRCLE_RADIUS
+    right_center_x = config.CANVAS_PADDING + single_circle_size + SPACING + CIRCLE_RADIUS
+    center_y = config.CANVAS_PADDING + CIRCLE_RADIUS
     
     # Text positioning radius (closer to the rim)
-    text_radius = circle_radius * 0.85
+    text_radius = CIRCLE_RADIUS * 0.85
     
     # SVG header
     svg = f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -49,45 +34,46 @@ def generate_circle_of_fifths_comparison_svg(
   <rect x="0" y="0" width="{canvas_width}" height="{canvas_height}" fill="none"/>
   
   <!-- Left circle (traditional notation) -->
-  <circle cx="{left_center_x}" cy="{center_y}" r="{circle_radius}" fill="{fill_color}" stroke="{stroke_color}" stroke-width="{stroke_width}"/>
+  <circle cx="{left_center_x}" cy="{center_y}" r="{CIRCLE_RADIUS}" fill="none" stroke="{config.COLOR}" stroke-width="{config.STROKE_WIDTH}"/>
   
   <!-- Right circle (new notation) -->
-  <circle cx="{right_center_x}" cy="{center_y}" r="{circle_radius}" fill="{fill_color}" stroke="{stroke_color}" stroke-width="{stroke_width}"/>
+  <circle cx="{right_center_x}" cy="{center_y}" r="{CIRCLE_RADIUS}" fill="none" stroke="{config.COLOR}" stroke-width="{config.STROKE_WIDTH}"/>
+  
+  <!-- Arrow between circles -->
+  <text x="{(left_center_x + right_center_x) / 2}" y="{center_y + config.FONT_SIZE * 0.5}" font-family="{config.FONT_FAMILY}" font-size="{config.FONT_SIZE * 2}" fill="{config.COLOR}" text-anchor="middle" font-weight="{config.FONT_WEIGHT}">⇒</text>
   
   <!-- Traditional notation labels -->'''
     
-    # Calculate font size based on circle size
-    font_size = circle_radius * 0.15
     
     # Add traditional notation labels to left circle
-    for i, note in enumerate(circle_of_fifths_order):
+    for i, note in enumerate(CIRCLE_OF_FIFTH_ORDER):
         angle_deg = (i * 30) - 90  # -90 to start at top
         angle_rad = math.radians(angle_deg)
         
         x = left_center_x + text_radius * math.cos(angle_rad)
         y = center_y + text_radius * math.sin(angle_rad)
-        y_adjusted = y + font_size * 0.35
+        y_adjusted = y + config.FONT_SIZE * 0.35
         
         svg += f'''
-  <text x="{x}" y="{y_adjusted}" font-family="{config.font_family}" font-size="{font_size}" fill="{stroke_color}" text-anchor="middle" font-weight="{config.font_weight}">{note}</text>'''
+  <text x="{x}" y="{y_adjusted}" font-family="{config.FONT_FAMILY}" font-size="{config.FONT_SIZE}" fill="{config.COLOR}" text-anchor="middle" font-weight="{config.FONT_WEIGHT}">{note}</text>'''
     
     svg += '''
   
   <!-- New notation labels -->'''
     
     # Add new notation labels to right circle
-    for i, note in enumerate(circle_of_fifths_order):
+    for i, note in enumerate(CIRCLE_OF_FIFTH_ORDER):
         angle_deg = (i * 30) - 90
         angle_rad = math.radians(angle_deg)
         
         x = right_center_x + text_radius * math.cos(angle_rad)
         y = center_y + text_radius * math.sin(angle_rad)
-        y_adjusted = y + font_size * 0.35
+        y_adjusted = y + config.FONT_SIZE * 0.35
         
-        label = config.new_note_names.get(note, note)
+        label = config.NEW_NOTE_NAMES.get(note, note)
         
         svg += f'''
-  <text x="{x}" y="{y_adjusted}" font-family="{config.font_family}" font-size="{font_size}" fill="{stroke_color}" text-anchor="middle" font-weight="{config.font_weight}">{label}</text>'''
+  <text x="{x}" y="{y_adjusted}" font-family="{config.FONT_FAMILY}" font-size="{config.FONT_SIZE}" fill="{config.COLOR}" text-anchor="middle" font-weight="{config.FONT_WEIGHT}">{label}</text>'''
     
     svg += '''
 </svg>'''

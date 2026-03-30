@@ -1,23 +1,23 @@
 # Copilot instructions for harmonic-system
 
 ## Repository state
-- Only file currently present is [README.md](README.md).
-- No source code, config, or build/test scripts are present yet.
+- Main documentation is in [README.md](README.md).
+- A minimal browser-based editor exists in [icon-editor/index.html](icon-editor/index.html) with supporting files [icon-editor/app.js](icon-editor/app.js) and [icon-editor/styles.css](icon-editor/styles.css).
 
 ## Architecture and components
-- No application architecture or components are defined in the repo at this time.
-- There are no internal modules, services, or data flows to follow.
+- The icon editor is a static client-side tool with no build step.
+- Rendering and SVG export logic live in [icon-editor/app.js](icon-editor/app.js).
 
 ## Workflows and commands
-- No build, test, run, or debug commands are documented or discoverable.
-- No package manager files (e.g., package.json, pyproject.toml, go.mod) exist.
+- No build system is required for the icon editor.
+- Run by opening [icon-editor/index.html](icon-editor/index.html) in a browser.
 
 ## Conventions and patterns
-- No project-specific coding conventions or patterns exist yet.
-- If new code is added, document conventions in [README.md](README.md) or this file.
+- Keep tools in this repository dependency-free unless there is a clear need for external packages.
+- If new workflows are introduced, document them in [README.md](README.md) and this file.
 
 ## Integrations and dependencies
-- No external dependencies or integration points are present.
+- The icon editor has no external runtime dependencies.
 
 ## When adding files
 - Prefer placing source under a standard top-level directory (e.g., src/) and document it here.

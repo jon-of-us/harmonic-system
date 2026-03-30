@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chord Icon Editor</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="panel">
+        <h1>Chord Icon Editor</h1>
+        <p class="hint">Click on the grid to add or update a point. Use Remove mode to clear all point types at a cell.</p>
+
+        <label>Point type</label>
+        <div class="typeRow" id="pointTypeButtons">
+          <button type="button" class="typeBtn isActive" data-point-type="chord">Chord</button>
+          <button type="button" class="typeBtn" data-point-type="tonic">Tonic</button>
+          <button type="button" class="typeBtn" data-point-type="bass">Bass</button>
+          <button type="button" class="typeBtn remove" data-point-type="erase">Remove</button>
+        </div>
+
+        <label>
+          Radius
+          <input id="radius" type="number" min="1" max="400" value="70" />
+        </label>
+
+        <label>
+          Fill color
+          <input id="fillColor" type="color" value="#333333" />
+        </label>
+
+        <label>
+          Bass inner radius
+          <input id="innerRadius" type="number" min="1" max="200" value="27" />
+        </label>
+
+        <label>
+          Bass inner color
+          <input id="innerColor" type="color" value="#ffffff" />
+        </label>
+
+        <label>
+          Text
+          <input id="labelText" type="text" placeholder="Optional" />
+        </label>
+
+        <label>
+          Text size
+          <input id="labelSize" type="number" min="1" max="240" value="34" />
+        </label>
+
+        <label>
+          Text color
+          <input id="labelColor" type="color" value="#111111" />
+        </label>
+
+        <label>
+          Font family
+          <input id="labelFontFamily" type="text" value="Arial, sans-serif" />
+        </label>
+
+        <label>
+          Font weight
+          <input id="labelFontWeight" type="number" min="100" max="900" step="100" value="400" />
+        </label>
+
+        <label>
+          Icon name
+          <input id="iconName" type="text" value="chord-icon" placeholder="chord-icon" />
+        </label>
+
+        <div class="row">
+          <button id="clearAll" type="button">Clear</button>
+          <button id="downloadSvg" type="button">Save SVG</button>
+        </div>
+
+        <div class="row">
+          <button id="undoBtn" type="button">Undo</button>
+          <button id="redoBtn" type="button">Redo</button>
+        </div>
+
+        <div class="row">
+          <label class="check">
+            <input id="showGrid" type="checkbox" checked />
+            Show grid
+          </label>
+          <label class="check">
+            <input id="autoConnect" type="checkbox" checked />
+            Auto connect chord points
+          </label>
+        </div>
+
+        <h2>Points</h2>
+        <ol id="pointList"></ol>
+      </aside>
+
+      <section class="canvasWrap">
+        <svg id="editorSvg" xmlns="http://www.w3.org/2000/svg" aria-label="Chord icon editor canvas"></svg>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

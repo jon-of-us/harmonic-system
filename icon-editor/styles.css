@@ -1,0 +1,165 @@
+:root {
+  --bg: #f7f7f4;
+  --panel: #ffffff;
+  --ink: #262626;
+  --muted: #6d6d6d;
+  --line: #d3d3d3;
+  --accent: #224f62;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 10%, #ffffff, #f0f0eb 60%, #e7e7df);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+.panel {
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  overflow-y: auto;
+}
+
+.panel h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.panel h2 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.hint {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.typeRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0.6rem;
+}
+
+.typeBtn {
+  margin-top: 0;
+  background: #f5f5f5;
+  color: #2f2f2f;
+  border: 1px solid var(--line);
+}
+
+.typeBtn.isActive {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.typeBtn.remove {
+  background: #6e2f2f;
+  color: #fff;
+  border-color: transparent;
+}
+
+label {
+  display: block;
+  margin: 0.65rem 0;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.42rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: #fff;
+  color: var(--ink);
+}
+
+button {
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  filter: brightness(1.07);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+  filter: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.check input {
+  margin: 0;
+  width: auto;
+}
+
+#pointList {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+#pointList li {
+  margin-bottom: 0.35rem;
+}
+
+.canvasWrap {
+  padding: 1rem;
+  min-width: 0;
+}
+
+#editorSvg {
+  width: 100%;
+  height: calc(100vh - 2rem);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+@media (max-width: 920px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  #editorSvg {
+    height: 70vh;
+  }
+}

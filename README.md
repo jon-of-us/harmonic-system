@@ -35,7 +35,7 @@
   When learning about music theory, it was very unclear to me why the major scale has the specific pattern of whole and half steps that it has. (whole, whole, half, whole, whole, whole, half). Why not a different pattern? 
 
   It turns out that this gets much clearer in the Harmonic System. 
-  As an example, consider the C-major scale, consisting of the notes C, D, E, F, G, A and B which have the new labels $4$, $6$, $8$, $9$, $5$, $7$ and $9$ respectively. 
+  As an example, consider the C-major scale, consisting of the notes C, D, E, F, G, A and B which have the new labels $4$, $6$, $8$, $3$, $5$, $7$ and $9$ respectively. 
   These are actually just $7$ **consecutive numbers** from $3$ to $9$! The pattern of whole and half steps in the major scale is just a consequence of the fact that the harmonic labels of the notes in the major scale are consecutive numbers. Similarly, any other major scale also consists of $7$ consecutive numbers. The root note, in this case C $= 4$, is always the second number in the sequence.
 
   This observation maybe clarifies a bit, why labelling the notes in steps of fifths is so useful. The major scale was not explicitly designed to have this nice property - its just notes that sound good together. 
@@ -46,11 +46,35 @@
 
 ### Diatonic chords
 
-  Note that the order of the notes of a key on the keyboard is not the same as the order of their harmonic labels. This actually turns out to be an advantage, because the order of the harmonic labels reveals the structure of the diatonic chords in a major key. 
-  
-  We will investigate this by considering the C-major scale again, and the $7$ consecutive numbers it consists of: $3$ (F), $4$ (C ), $5$ (G), $6$ (D), $7$ (A), $8$ (E) and $9$ (B), you can see that the diatonic chords of the first three notes ($3$, $4$ and $5$) are major chords. The diatonic chords of the next three are minor ($6$, $7$, $8$), and the last note forms a diminished chord ($9$). 
+  Note that the order of the notes of a key on the keyboard is not the same as the order of their harmonic labels. This actually turns out to be an advantage, because the order of the harmonic labels reveals the structure of the diatonic chords in a major key.
 
-  The "main" major chord of the key, the tonic chord / $I$ chord, has the root not with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic), and the other two major chords $T-$ and $T+$. In classical music theory these are referred to as the subdominant ($T-$, in this case $3$ / F) and the dominant 99
+  *The diatonic chords of a major key are the chords only consisting of notes from the major scale. They "naturally" belong to the key, and are the most commonly used chords in that key.*
+  
+  We will investigate this by considering the key of C-major again, and the $7$ consecutive number the C-major scale consists of: $3$ (F), $4$ (C ), $5$ (G), $6$ (D), $7$ (A), $8$ (E) and $9$ (B), you can see that the diatonic chords of the first three notes ($3$, $4$ and $5$) are major chords. The diatonic chords of the next three are minor ($6$, $7$, $8$), and the last note forms a diminished chord ($9$). 
+
+  **Structure and naming of the diatonic chords**
+
+  The main major chord of the key, the "tonic" chord or "$I$-chord", has the root note with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic), and the other two major chords $T-$ and $T+$. In classical music theory these are referred to as the subdominant ($T-$, in this case $3$ / F) and the dominant ($T+$, in this case $5$ / G) chord. Similarly, the main minor chord, the "parallel minor", or "$vi$-chord", has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*), and the other two minor chords $M-$ and $M+$. 
+
+  *This naming is intended to be used for both major and minor keys. In a minor key, the main minor chord (the tonic) is still called the $M$ chord, and $T$ refers to its parallel major chord. Effectively major and (natural) minor keys are not distinguished.*
 
 ### Chord progressions
-  The new note labels also make it easier to understand chord progressions in many cases. An example is the $ii - V - I$ progression, which is considered the most fundamental chord progression in Jazz music. It might seem a bit arbitrary at first, but it turns out to be a sequence of chords descending in fifths and ending on the tonic chord. This means that in the new system the progression are just three consecutive (descending) numbers. For example, in the key of C major, it is given by $6 - 5 - 4$. 
+  The new note labels also make it easier to understand chord progressions in many cases. An example is the $ii - V - I$ progression, which is considered the most fundamental chord progression in Jazz music. It might seem a bit arbitrary at first, but it turns out to be a sequence of chords descending in fifths and ending on the tonic chord. This means that in the new system the progression are just three consecutive (descending) numbers. For example, in the key of C major, it is given by $6, 5, 4$. 
+
+  This is closely related to the concept of a "(secondary) dominant". A secondary dominant is a chord that is a fifth above the root of another chord. Usually classic or jazz pianists will memorize, for every chord, which secondary dominant belongs to it. In the harmonic system you can easily find the secondary dominant of any chord by just adding $1$ to its harmonic label. 
+
+  To understand the structure of chord progressions, it is useful to express them relative to the position of the key, with the previously introduced naming ($T-$, $T$, $T+$, $M-$, $M$, $M+$). For example, the $ii - V - I$ progression can be expressed as $M-\; T+\; T$. This makes it easy to transpose the progression to any key: 
+  If you want to play in the key of $1$-major (E$\flat$-major) for example, you first find out what $T$ is in that key, which is $1$ (E$\flat$), and what $M$ is, which is $4$ (always $T + 3$). Then you can easily find the other chords in the progression by subtracting or adding $1$ to the harmonic labels. In this case: 
+  $$
+  \begin{align*}
+    & ii - V - I \\
+    & M-,\; T+,\; T \\
+    & 3,\; 2,\; 1
+  \end{align*}$$
+
+
+### Visualizing chords 
+  As a supplement to the harmonic system, there is a nice way to visualize chords and chord progressions in a scale. Let's start by considering the notes that make up a major scale displayed in one row. Here we take C-major again as an example.
+  ![C-major scale](icons/scale.svg)
+  To make it a bit more compact, we remove the last note, and then move 6, 7 and 8 to the next row. 
+

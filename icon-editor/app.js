@@ -5,6 +5,8 @@ const LINE_WIDTH = 50;
 const PADDING = 120;
 const TEXT_VERTICAL_ADJUSTMENT = 0.12;
 const STORAGE_KEY = 'chord-icon-editor-settings-v1';
+const VIEW_MARGIN_ROWS = 3;
+const VIEW_MARGIN_COLS = 2;
 
 const DEFAULTS = {
   chord: { radius: 70, color: '#333333' },
@@ -40,6 +42,7 @@ const ui = {
   labelFontFamily: document.getElementById('labelFontFamily'),
   labelFontWeight: document.getElementById('labelFontWeight'),
   iconName: document.getElementById('iconName'),
+  resetTypeStyle: document.getElementById('resetTypeStyle'),
   clearAll: document.getElementById('clearAll'),
   downloadSvg: document.getElementById('downloadSvg'),
   undoBtn: document.getElementById('undoBtn'),
@@ -203,8 +206,16 @@ function pointKey(row, col) {
   return `${row}:${col}`;
 }
 
-function getBounds() {
+function getBounds(includeViewMargins = true) {
   if (state.points.length === 0) {
+    if (includeViewMargins) {
+      return {
+        minX: -HORIZONTAL_DISTANCE * 4,
+        maxX: HORIZONTAL_DISTANCE * 8,
+        minY: -VERTICAL_DISTANCE * 6,
+        maxY: VERTICAL_DISTANCE * 8
+      };
+    }
     return { minX: -300, maxX: 900, minY: -300, maxY: 900 };
   }
 
@@ -230,7 +241,16 @@ function getBounds() {
     }
   }
 
-  return { minX, maxX, minY, maxY };
+  if (!includeViewMargins) {
+    return { minX, maxX, minY, maxY };
+  }
+
+  return {
+    minX: minX - HORIZONTAL_DISTANCE * VIEW_MARGIN_COLS,
+    maxX: maxX + HORIZONTAL_DISTANCE * VIEW_MARGIN_COLS,
+    minY: minY - VERTICAL_DISTANCE * VIEW_MARGIN_ROWS,
+    maxY: maxY + VERTICAL_DISTANCE * VIEW_MARGIN_ROWS
+  };
 }
 
 function render() {
@@ -264,8 +284,8 @@ function gridMarkup(width, height, offsetX, offsetY) {
   }
 
   let markup = '';
-  for (let row = -12; row <= 12; row += 1) {
-    for (let col = -12; col <= 12; col += 1) {
+  for (let row = -20; row <= 20; row += 1) {
+    for (let col = -20; col <= 20; col += 1) {
       const p = toGridPoint(row, col);
       const x = p.x + offsetX;
       const y = p.y + offsetY;
@@ -348,10 +368,32 @@ function updateControlsForType(type) {
   ui.labelColor.disabled = isErase;
   ui.labelFontFamily.disabled = isErase;
   ui.labelFontWeight.disabled = isErase;
+  ui.resetTypeStyle.disabled = isErase;
 
   if (!isErase) {
     applyModeSettingsToControls(type);
   }
+}
+
+function resetCurrentTypeStyle() {
+  if (state.selectedType === 'erase') {
+    return;
+  }
+
+  const settings = state.modeSettings[state.selectedType];
+  const typeDefaults = DEFAULTS[state.selectedType];
+  settings.radius = typeDefaults.radius;
+  settings.innerRadius = DEFAULTS.bass.innerRadius;
+  settings.color = typeDefaults.color;
+  settings.innerColor = DEFAULTS.bass.innerColor;
+  settings.labelText = '';
+  settings.labelSize = DEFAULTS.textSize;
+  settings.labelColor = DEFAULTS.textColor;
+  settings.labelFontFamily = DEFAULTS.textFontFamily;
+  settings.labelFontWeight = DEFAULTS.textFontWeight;
+
+  applyModeSettingsToControls(state.selectedType);
+  savePersistentSettings();
 }
 
 function addOrUpdatePoint(row, col) {
@@ -468,7 +510,7 @@ function onSvgClick(event) {
 }
 
 function downloadSvg() {
-  const bounds = getBounds();
+  const bounds = getBounds(false);
   const width = Math.max(300, bounds.maxX - bounds.minX + PADDING * 2);
   const height = Math.max(300, bounds.maxY - bounds.minY + PADDING * 2);
   const offsetX = PADDING - bounds.minX;
@@ -516,6 +558,7 @@ ui.iconName.addEventListener('input', () => {
   state.iconName = ui.iconName.value;
   savePersistentSettings();
 });
+ui.resetTypeStyle.addEventListener('click', resetCurrentTypeStyle);
 
 ui.clearAll.addEventListener('click', () => {
   state.points = [];

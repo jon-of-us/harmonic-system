@@ -9,9 +9,9 @@
 ### How does it work?
   The idea is to use numbers as names for the notes, instead of the traditional letters (C, C#, D, D#...) or syllables (do, re, mi, ...). Each note is assigned a number from $0$ to $11$ in the following way: 
 
-  ![Piano octave with new note labels](scripts/piano-octave.svg)
+  <img src="scripts/piano-octave.svg" alt="Piano octave with new note labels" width="400">
 
-  *Figure 1: Piano octave with new note labels*
+  *Piano octave with new note labels*
 
   Note that the notes are not labeled in order. Instead two notes which are $7$ semitones (one fifth) apart, always have labels differing by $1$. For example, $C$ and $G$ are a fifth apart, and their labels are $4$ and $5$. Lets call these labels "harmonic labels".
 
@@ -24,9 +24,9 @@
 
   The concept of ordering the notes in steps of fifths is not new at all. In fact, the circle of fifths is a well-known concept in music theory. The way we label the notes in the Harmonic System turns the circle of fifths into a simple circle of numbers like a clock.
 
-  ![Circle of fifths with new note labels](scripts/circle-of-fifths.svg)
+  <img src="scripts/circle-of-fifths.svg" alt="Circle of fifths with new note labels" width="500">
 
-  *Figure 2: The circle of fifth turns into a simple clock of numbers with the new note labels*
+  *The circle of fifth turns into a simple clock of numbers with the new note labels*
 
   This means by memorizing the harmonic labels, you have also memorized the circle of fifths! 
 
@@ -74,7 +74,40 @@
 
 
 ### Visualizing chords 
-  As a supplement to the harmonic system, there is a nice way to visualize chords and chord progressions in a scale. Let's start by considering the notes that make up a major scale displayed in one row. Here we take C-major again as an example.
-  ![C-major scale](icons/scale.svg)
-  To make it a bit more compact, we remove the last note, and then move 6, 7 and 8 to the next row. 
 
+  The harmonic system can easily be integrated into traditional chord notation, by just replacing the note names with their harmonic labels, for example:
+  $$A♭_\text{maj7} \;\;\; E♭ \;\;\; B♭ \;\;\; G_7  \;\;\;C_\text{m}\;\;\; \rightarrow \;\;\; 0_\text{maj7} \;\;\; 1  \;\;\; 2  \;\;\; 4_7 \;\;\;  3_m$$
+  This way, the system can already be used effectively. However, this notation is not optimal. For example in $4_7$, numbers are used both to indicate the root note and the type of the chord, which can be a bit confusing.  
+
+  Therefore, as a supplement to the harmonic system, there is a nice way to visualize chords and chord progressions in a scale. Let's start by considering the notes that make up a major scale displayed in one row. Here we take C-major again as an example.
+
+  <img src="icons/scale.svg" alt="C-major scale" width="250">
+
+  To make it a bit more compact, we remove the last note, and then move 6, 7 and 8 to the next row. This way they are displayed in a grid-like structure, which can be seen as part of an infinite grid of notes, extending in both directions. This grid was already invented 300 years ago by the mathematician Leonhard Euler, and is known as the "Tonnetz". 
+
+  <img src="icons/tonic-grid-extended.svg" alt="C-major scale in two rows" width="280">
+
+  *The C-major scale displayed in a grid structure, which can be seen as part of an infinite grid of notes, known as the "Tonnetz"*  
+
+  Now we can visualize chords by connecting the notes that belong to the chord. Note that a horizontal connection between two notes corresponds to a fifth, a connection diagonally downwards corresponds to a major third, and a connection diagonally upwards corresponds to a minor third. For example, the tonic chord $T$ (C major) consists of the notes $4$(C ), $8$(E) and $5$(G), which form a triangle. For clarity, we will omit the note labels. 
+
+  <img src="icons/c-major.svg" alt="Tonic chord visualized in the grid" width="100">
+
+  Because of the symmetry of the grid, every other major chord also forms a triangle pointing downwards. Minor chords are represented by triangles pointing upwards. We will call these forms the "shape" of the chord. As an example, here are some diatonic chords, displayed at the right position in the grid:
+
+  <img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="400">
+
+   
+  A nice property of this representation is, that for most chords the notes are in the same order on the grid as they are on the keyboard. The leftmost point is the base note. The fastest way to recognize a chord is usually by its shape (which determines the type of the chord) and base note. Here are some other example shapes of common chords. If you play the piano, you can try to find out which ones they are: 
+
+  <img src="icons/chord-shapes.svg" alt="Shapes of common chords" width="220">
+
+  *Some example shapes of common chords* 
+
+  These shapes can either be used instead of traditional chord names like "maj7" or "m7b5" to write chord progressions explicitly in a given key, for example:
+
+  <img src="icons/chord-progression.png" alt="Chord progression written with shapes" width="150">
+
+  Or they can be displayed relative to the key, revealing the structure of the progression, for example:
+
+  <img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="150">

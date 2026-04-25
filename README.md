@@ -54,12 +54,12 @@ Staying with C-major and its labels $3$ (F), $4$ (C ), $5$ (G), $6$ (D), $7$ (A)
 
 **Naming the diatonic chords**
 
-The main major chord of the key, the "tonic" chord or "$I$-chord", has the root note with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic). The other two major chords are named relative to it:
+The main major chord of the key, the "tonic" chord or $I$-chord, has the root note with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic). The other two major chords are named relative to it:
 *   **T**: The tonic chord ($I$). In C-major, this is C ($4$).
 *   **T-**: The subdominant chord ($IV$). In C-major: F ($3$).
 *   **T+**: The dominant chord ($V$). In C-major: G ($5$).
 
-Similarly, the main minor chord, the "parallel minor", or "$vi$-chord", has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*). The other two minor chords are named relative to it:
+Similarly, the main minor chord, the "parallel minor", or $vi$-chord, has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*). The other two minor chords are named relative to it:
 *   **M**: The relative minor chord ($vi$). In C-major: Am ($7$).
 *   **M-**: The supertonic chord ($ii$). In C-major: Dm ($6$).
 *   **M+**: The mediant chord ($iii$). In C-major: Em ($8$).
@@ -74,7 +74,7 @@ This is closely related to the concept of a **secondary dominant**. A secondary 
 ### Visualizing chords
 
 The harmonic system can easily be integrated into traditional chord notation, by just replacing the note names with their harmonic labels, for example:
-$$A♭_\text{maj7} \;\;\; E♭ \;\;\; B♭ \;\;\; G_7  \;\;\;C_\text{m}\;\;\; \rightarrow \;\;\; 0_\text{maj7} \;\;\; 1  \;\;\; 2  \;\;\; 4_7 \;\;\;  3_m$$
+$$A\flat_{\text{maj7}} \quad E\flat \quad B\flat \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m$$
 This way, the system can already be used effectively. However, this notation is not optimal. For example in $4_7$, numbers are used both to indicate the root note and the type of the chord, which can be a bit confusing.
 
 Therefore, as a supplement to the harmonic system, there is a nice way to visualize chords and chord progressions in a scale. Let's start by considering the notes that make up a major scale displayed in one row. Here we take C-major again as an example.

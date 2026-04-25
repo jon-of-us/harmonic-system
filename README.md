@@ -159,7 +159,7 @@ This makes transposing chords progressions to any key easy.
 
 ### Details 
 - During the development of the system, I initially took the note $A = 0$ as the starting point. But after realizing that the "jump" in the clock from $11$ to $0$ is a bit inconvenient, I switched to $A = 7$, $C = 4$, leading to a slightly rotated clock. This way, the scales most commonly used in pop music do not contain the jump. I believe this is the optimal choice. 
-- The system is great for notation and analysis of harmony, it is useful for melody. 
+- The system is great for notation and analysis of harmony, it is not useful for melody. 
 
 ### Conclusion
 

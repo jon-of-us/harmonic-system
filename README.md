@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # The Harmonic System
 
 The Harmonic System is a new way to think about music theory. By replacing traditional note names with numbers that reflect harmonic relationships, it makes analyzing, transcribing, and understanding harmony significantly easier. It can be seen as a more intuitive and consistent alternative to Roman-Numeral Analysis.

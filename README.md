@@ -1,10 +1,8 @@
-
-
 # The Harmonic Sytem
 
-  The Harmonic System is a new way to think about music theory. It makes analyzing, transcribing and understanding harmony easier. Its simple to use and can be seen as a replacement for Roman Numeral Analysis.
+  The Harmonic System is a new way to think about music theory. It makes analyzing, transcribing and understanding harmony easier. It's simple to use and can be seen as a replacement for Roman Numeral Analysis, offering a more intuitive and consistent way to understand harmonic functions. 
 
-  Although its not required to know a lot about music theory to use the Harmonic System, this article aims to explain the system for people who already have a basic understanding of music theory. 
+  Although it's not required to know a lot about music theory to use the Harmonic System, this article aims to explain the system for people who already have a basic understanding of music theory. 
 
 ### How does it work?
   The idea is to use numbers as names for the notes, instead of the traditional letters (C, C#, D, D#...) or syllables (do, re, mi, ...). Each note is assigned a number from $0$ to $11$ in the following way: 
@@ -13,7 +11,7 @@
 
   *Piano octave with new note labels*
 
-  Note that the notes are not labeled in order. Instead two notes which are $7$ semitones (one fifth) apart, always have labels differing by $1$. For example, $C$ and $G$ are a fifth apart, and their labels are $4$ and $5$. Lets call these labels "harmonic labels".
+  Note that the notes are not labeled in order. Instead, two notes which are $7$ semitones (one fifth) apart, always have labels differing by $1$. For example, $C$ and $G$ are a fifth apart, and their labels are $4$ and $5$. Lets call these labels "harmonic labels".
 
   Another observation we can make is that that going up by $2$ semitones corresponds to adding $2$ to the harmonic label. This nice "coincidence" makes learning the new note labels easier. 
 

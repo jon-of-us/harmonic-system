@@ -157,8 +157,24 @@ The labels of the notes other than $T$ and $M$ can be easily obtained by adding 
 This makes transposing chords progressions to any key easy. 
 
 
+### Details 
+- During the development of the system, I initially took the note $A = 0$ as the starting point. But after realizing that the "jump" in the clock from $11$ to $0$ is a bit inconvenient, I switched to $A = 7$, $C = 4$, leading to a slightly rotated clock. This way, the scales most commonly used in pop music do not contain the jump. I believe this is the optimal choice. 
+- The system is great for notation and analysis of harmony, it is useful for melody. 
+
 ### Conclusion
 
 The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets to the harmonic system, use [https://jon-of-us.github.io/chord-converter/](https://jon-of-us.github.io/chord-converter/)
 
+### Behind the system 
 
+When learning about music theory in school, I found it sad that something as beautiful and intuitive as music is so difficult to approach theoretically. It was a lot about memorization and concepts that felt arbitrary. I never got to the point where they paid off. 
+
+So I started to experiment with different ways to simplify theory and notation. When I realized that many harmonic relationships are based on the fifth, I was surprised to discover such a nice and intuitive system. It was amazing to see how many concepts that I didn't understand before fell into place with the Harmonic System.
+
+I have been learning the piano for the last 3 years using this system, and can confidently say that it makes understanding music much easier. Even if you don't actively study the theory, just seeing the harmonic labels on the sheet music makes you discover patterns that are not visible with traditional note names. I hope you like the Harmonic System as much as I do! If you have any feedback or suggestions, feel free to reach out.
+
+Jonas
+
+
+---
+<div style="text-align: right; font-size: 0.7em; margin-top: 2em;">Jonas Ullmann, ullmann4@uni-potsdam.de</div>

@@ -1,6 +1,5 @@
 ---
 layout: default
-math: true
 ---
 
 # The Harmonic System

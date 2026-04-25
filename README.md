@@ -135,7 +135,7 @@ But the notes follow the general structure, independent of the key:
 
 *A general scale in the grid structure* 
 
-That means, we can read the progression any another key, by following three simple steps. Lets read the same progressoin in $1(E♭)$-major, as an example. 
+That means, we can read the progression any another key, by following three simple steps. Lets read the same progressoin in $1(E_♭)$-major, as an example. 
 
 
 **1. Calculate $T$ and $M$**

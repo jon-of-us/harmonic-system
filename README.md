@@ -81,11 +81,11 @@ This way, the system can already be used effectively. However, this notation is 
 
 Therefore, as a supplement to the harmonic system, there is a nice way to visualize chords and chord progressions in a scale. Let's start by considering the notes that make up a major scale displayed in one row. Here we take C-major again as an example.
 
-<img src="icons/scale.svg" alt="C-major scale" width="250">
+<img src="icons/scale.svg" alt="C-major scale" width="300">
 
 To make it a bit more compact, we remove the last note, and then move 6, 7 and 8 to the next row. This way they are displayed in a grid-like structure, which can be seen as part of an infinite grid of notes, extending in both directions. This grid was already invented 300 years ago by the mathematician Leonhard Euler, and is known as the "Tonnetz".
 
-<img src="icons/tonic-grid-extended.svg" alt="C-major scale in two rows" width="250">
+<img src="icons/tonic-grid-extended.svg" alt="C-major scale in two rows" width="310">
 
 *The C-major scale displayed in a grid structure, which can be seen as part of an infinite grid of notes, known as the "Tonnetz"*
 
@@ -93,29 +93,29 @@ In this grid, a horizontal connection is a **fifth**, a diagonal connection goin
 
 Now we can visualize chords by connecting the notes that belong to the chord. For example, the tonic chord $T$ (C major) consists of the notes $4$(C ), $8$(E) and $5$(G), which form a triangle. For clarity, we will omit the note labels.
 
-<img src="icons/c-major.svg" alt="Tonic chord visualized in the grid" width="80">
+<img src="icons/c-major.svg" alt="Tonic chord visualized in the grid" width="60">
 
 By of the symmetry of the grid, every other major chord also forms downward triangle. Minor chords are represented by upward triangles. We will call these forms the **shape** of the chord. Here are the diatonic chords at their positions in the grid:
 
-<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="750">
+<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="580">
 
 
 A nice property of this representation is, that for most chords their left-to-right order on the grid matches the order on the keyboard. The leftmost point is the base note. The fastest way to recognize a chord is usually by its shape (which determines the type of the chord) and base note.
 
 Here are some shapes of other common chords — if you play piano, see if you can identify them:
 
-<img src="icons/chord-shapes.svg" alt="Shapes of common chords" width="200">
+<img src="icons/chord-shapes.svg" alt="Shapes of common chords" width="160">
 
 *Shapes of some common chord types*
 
 These shapes can either be used instead of traditional chord names like "maj7" or "m7b5" to write chord progressions explicitly in a given key, for example:
 
-<img src="icons/chord-progression.png" alt="Chord progression written with shapes" width="250">
+<img src="icons/chord-progression.png" alt="Chord progression written with shapes" width="200">
 
 Or they can be displayed relative to the key, revealing the structure of the progression, for example:
 
 
-<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="250">
+<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="200">
 
 ### Transposing a chord progression
 
@@ -144,7 +144,7 @@ $T = 1$ is the tonic in $1$-major. $M = 4$ is always over $T + 3$
 
 **2. Identify roots** 
 
-<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="250">
+<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="200">
 
 Identify where the roots (lefmost notes of the shape) are in comparison to the gray notes of the scale. Here they are in the lower left, upper right, top-middle
 
@@ -152,7 +152,7 @@ Identify where the roots (lefmost notes of the shape) are in comparison to the g
 
 The labels of the notes other than $T$ and $M$ can be easily obtained by adding or substracting $1$. This gives the following progression
 
-<img src="icons/chord-progression-in-1.png" width="250">
+<img src="icons/chord-progression-in-1.png" width="170">
 
 This makes transposing chords progressions to any key easy. 
 

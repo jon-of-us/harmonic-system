@@ -75,9 +75,7 @@ This is closely related to the concept of a **secondary dominant**. A secondary 
 
 The harmonic system can easily be integrated into traditional chord notation, by just replacing the note names with their harmonic labels, for example:
 
-$$
-A\flat_{\text{maj7}} \quad E\flat \quad B\flat \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m
-$$
+$$A\flat_{\text{maj7}} \quad E\flat \quad B\flat \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m$$
 
 This way, the system can already be used effectively. However, this notation is not optimal. For example in $4_7$, numbers are used both to indicate the root note and the type of the chord, which can be a bit confusing.
 

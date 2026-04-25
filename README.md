@@ -40,7 +40,7 @@ This observation maybe clarifies a bit, why labelling the notes in steps of fift
 But since the fifth is the most consonant interval (apart from the octave), it turns out that notes with close harmonic labels tend to sound consonant together. So it makes sense that the major scale, which consists of seven notes that sound most consonant together, are also the ones that have consecutive harmonic labels.
 Similarly, the pentatonic scale consists of $5$ consecutive numbers, being even more consonant.
 
-This means, that by memorizing the harmonic labels of the notes, you have also memorized the structure of the major scale in any key. The same applies to the minor scale, since it consists of the same notes as the parallel major scale.
+This means, that by memorizing the harmonic labels of the notes, you have also memorized the structure of the major scale in any key. The same applies to the minor scale, since it consists of the same notes as the parallel major scale. In general, it applies to all _diatonic modes_.
 
 ### Diatonic chords
 Note that the order of the notes of a key on the keyboard is not the same as the order of their harmonic labels. This actually turns out to be an advantage, because the order of the harmonic labels reveals the structure of the diatonic chords in a major key: They directly show the chord types.
@@ -156,7 +156,9 @@ The labels of the notes other than $T$ and $M$ can be easily obtained by adding 
 
 This makes transposing chords progressions to any key easy. 
 
+
 ### Conclusion
 
-The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets from to the harmonic system, use [https://jon-of-us.github.io/chord-converter/](https://jon-of-us.github.io/chord-converter/)
+The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets to the harmonic system, use [https://jon-of-us.github.io/chord-converter/](https://jon-of-us.github.io/chord-converter/)
+
 

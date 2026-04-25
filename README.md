@@ -97,7 +97,7 @@ Now we can visualize chords by connecting the notes that belong to the chord. Fo
 
 By of the symmetry of the grid, every other major chord also forms downward triangle. Minor chords are represented by upward triangles. We will call these forms the **shape** of the chord. Here are the diatonic chords at their positions in the grid:
 
-<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="580">
+<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="560">
 
 
 A nice property of this representation is, that for most chords their left-to-right order on the grid matches the order on the keyboard. The leftmost point is the base note. The fastest way to recognize a chord is usually by its shape (which determines the type of the chord) and base note.
@@ -158,5 +158,5 @@ This makes transposing chords progressions to any key easy.
 
 ### Conclusion
 
-The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets from to the harmonic system, use https://jon-of-us.github.io/chord-converter/
+The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets from to the harmonic system, use [https://jon-of-us.github.io/chord-converter/](https://jon-of-us.github.io/chord-converter/)
 

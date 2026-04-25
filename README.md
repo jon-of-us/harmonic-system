@@ -165,6 +165,10 @@ This makes transposing chords progressions to any key easy.
 
 The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets to the harmonic system, use [https://jon-of-us.github.io/chord-converter/](https://jon-of-us.github.io/chord-converter/)
 
+
+<br>
+<br>
+
 ### Behind the system 
 
 When learning about music theory in school, I found it sad that something as beautiful and intuitive as music is so difficult to approach theoretically. It was a lot about memorization and concepts that felt arbitrary. I never got to the point where they paid off. 

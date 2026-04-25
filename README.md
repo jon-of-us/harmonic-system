@@ -76,7 +76,7 @@ This is closely related to the concept of a **secondary dominant**. A secondary 
 The harmonic system can easily be integrated into traditional chord notation, by just replacing the note names with their harmonic labels, for example:
 
 $$
-A♭_{\text{maj7}} \quad E♭ \quad B♭ \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m
+A\flat_{\text{maj7}} \quad E\flat \quad B\flat \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m
 $$
 
 This way, the system can already be used effectively. However, this notation is not optimal. For example in $4_7$, numbers are used both to indicate the root note and the type of the chord, which can be a bit confusing.
@@ -135,7 +135,7 @@ But the notes follow the general structure, independent of the key:
 
 *A general scale in the grid structure* 
 
-That means, we can read the progression any another key, by following three simple steps. Let's read the same progressoin in $1(E♭)$-major, as an example. 
+That means, we can read the progression any another key, by following three simple steps. Let's read the same progressoin in $1(E\flat)$-major, as an example. 
 
 
 **1. Calculate $T$ and $M$**
@@ -162,6 +162,3 @@ This makes transposing chords progressions to any key easy.
 
 The Harmonic System offers a fresh perspective on music theory, simplifying complex concepts like the circle of fifths, scale construction, and diatonic harmony. By internalizing the numeric labels, musicians can more easily see and understand the underlying structure of music. The visual language of chord shapes on the Tonnetz provides a powerful tool for music analysis. I hope this system empowers you to explore harmony in a new and intuitive way. If you want to convert chord sheets from to the harmonic system, use https://jon-of-us.github.io/chord-converter/
 
-\[
-\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
-\]

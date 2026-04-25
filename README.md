@@ -97,25 +97,25 @@ Now we can visualize chords by connecting the notes that belong to the chord. Fo
 
 By of the symmetry of the grid, every other major chord also forms downward triangle. Minor chords are represented by upward triangles. We will call these forms the **shape** of the chord. Here are the diatonic chords at their positions in the grid:
 
-<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="400">
+<img src="icons/diatonic-chords.png" alt="Diatonic chords at their positions in the grid" width="750">
 
 
 A nice property of this representation is, that for most chords their left-to-right order on the grid matches the order on the keyboard. The leftmost point is the base note. The fastest way to recognize a chord is usually by its shape (which determines the type of the chord) and base note.
 
 Here are some shapes of other common chords — if you play piano, see if you can identify them:
 
-<img src="icons/chord-shapes.svg" alt="Shapes of common chords" width="180">
+<img src="icons/chord-shapes.svg" alt="Shapes of common chords" width="200">
 
 *Shapes of some common chord types*
 
 These shapes can either be used instead of traditional chord names like "maj7" or "m7b5" to write chord progressions explicitly in a given key, for example:
 
-<img src="icons/chord-progression.png" alt="Chord progression written with shapes" width="150">
+<img src="icons/chord-progression.png" alt="Chord progression written with shapes" width="250">
 
 Or they can be displayed relative to the key, revealing the structure of the progression, for example:
 
 
-<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="150">
+<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="250">
 
 ### Transposing a chord progression
 
@@ -144,7 +144,7 @@ $T = 1$ is the tonic in $1$-major. $M = 4$ is always over $T + 3$
 
 **2. Identify roots** 
 
-<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="150">
+<img src="icons/chord-progression-relative.png" alt="Chord progression written with shapes relative to the key" width="250">
 
 Identify where the roots (lefmost notes of the shape) are in comparison to the gray notes of the scale. Here they are in the lower left, upper right, top-middle
 
@@ -152,7 +152,7 @@ Identify where the roots (lefmost notes of the shape) are in comparison to the g
 
 The labels of the notes other than $T$ and $M$ can be easily obtained by adding or substracting $1$. This gives the following progression
 
-<img src="icons/chord-progression-in-1.png" width="150">
+<img src="icons/chord-progression-in-1.png" width="250">
 
 This makes transposing chords progressions to any key easy. 
 

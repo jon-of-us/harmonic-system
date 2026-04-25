@@ -1,6 +1,6 @@
 # The Harmonic System
 
-The Harmonic System is a new way to think about music theory. By replacing traditional note names with numbers that reflect harmonic relationships, it makes analyzing, transcribing, and understanding harmony significantly easier. It can be seen as a more intuitive and consistent alternative to Roman Numeral Analysis.
+The Harmonic System is a new way to think about music theory. By replacing traditional note names with numbers that reflect harmonic relationships, it makes analyzing, transcribing, and understanding harmony significantly easier. It can be seen as a more intuitive and consistent alternative to Roman-Numeral Analysis.
 
 Although you don't need much music theory knowledge to use the Harmonic System, this article is written for readers who already have a basic understanding of music theory.
 
@@ -54,17 +54,17 @@ Staying with C-major and its labels $3$ (F), $4$ (C ), $5$ (G), $6$ (D), $7$ (A)
 
 **Naming the diatonic chords**
 
-The main major chord of the key, the “tonic” chord or “$I$-chord”, has the root note with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic). The other two major chords are named relative to it:
+The main major chord of the key, the "tonic" chord or $I$-chord, has the root note with harmonic label $4$, which in the middle between the other major chords ($3$ and $5$). We will call this chord the $T$ chord (for tonic). The other two major chords are named relative to it:
 *   **T**: The tonic chord ($I$). In C-major, this is C ($4$).
 *   **T-**: The subdominant chord ($IV$). In C-major: F ($3$).
 *   **T+**: The dominant chord ($V$). In C-major: G ($5$).
 
-Similarly, the main minor chord, the “parallel minor”, or “$vi$-chord”, has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*). The other two minor chords are named relative to it:
+Similarly, the main minor chord, the "parallel minor", or $vi$-chord, has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*). The other two minor chords are named relative to it:
 *   **M**: The relative minor chord ($vi$). In C-major: Am ($7$).
 *   **M-**: The supertonic chord ($ii$). In C-major: Dm ($6$).
 *   **M+**: The mediant chord ($iii$). In C-major: Em ($8$).
 
-This naming is intended to be used for both major and minor keys. In a minor key, the main minor chord, the tonic, is still called the $M$ chord, and $T$ refers to its parallel major chord. Effectively major and natural minor keys are not distinguished.
+This naming is intended to be used for both major and minor keys. In a minor key, the main minor chord (the tonic) is still called the $M$ chord, and $T$ refers to its parallel major chord. Effectively major and (natural) minor keys are not distinguished.
 
 ### Chord progressions
 The new note labels also make it easier to understand chord progressions in many cases. An example is the $ii - V - I$ progression, which is considered the most fundamental chord progression in Jazz music. It might seem a bit arbitrary at first, but it turns out to be a sequence of chords descending in fifths and ending on the tonic chord. This means that in the new system the progression are just three consecutive (descending) numbers. For example, in the key of C major, it is given by $6, 5, 4$.
@@ -121,11 +121,11 @@ Or they can be displayed relative to the key, revealing the structure of the pro
 
 ### Transposing a chord progression
 
-Since we do not explicitly write the note labels on the grey dots which form the key, this diagram can represent the same chord progression in any key. In the chord progression above we took C-Major as an example. You can verify, that the root notes of the chords, match the corresponding notes in c major.
+Since we do not explicitly write the note labels on the gray dots which form the key, this diagram can represent the same chord progression in any key. In the chord progression above we took C-Major as an example. You can verify, that the root notes of the chords, match the corresponding notes in c major.
 
 <img src="icons/tonic-grid-c_maj.svg" width="150">
 
-*The C-major scale in a grid structre*
+*The C-major scale in a grid structure*
 
 But the notes follow the general structure, independent of the key: 
 
@@ -135,7 +135,7 @@ But the notes follow the general structure, independent of the key:
 
 *A general scale in the grid structure* 
 
-That means, we can read the progression any another key, by following three simple steps. Lets read the same progressoin in $1(E_♭)$-major, as an example. 
+That means, we can read the progression any another key, by following three simple steps. Let's read the same progressoin in $1(E♭)$-major, as an example. 
 
 
 **1. Calculate $T$ and $M$**

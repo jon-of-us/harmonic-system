@@ -12,7 +12,7 @@ The core idea is simple: instead of naming notes with letters (C, C#, D, …) or
 
 *Piano octave with harmonic labels*
 
-A useful consequence of this rule is that going up by a whole step (2 semitones) corresponds to adding $2$ to the label — for instance, C is $4$ and D is $6$. This makes the labels easy to remember and work with. 
+A useful consequence of this rule is that going up by a whole step ($2$ semitones) corresponds to adding $2$ to the label — for instance, C is $4$ and D is $6$. This makes the labels easy to remember and work with. 
 
 To use the system effectively, you need to memorize the harmonic labels. But it will pay off, because they reveal the underlying structure of music. Now let’s see how this system simplifies traditional music theory concepts.
 
@@ -76,7 +76,7 @@ This is closely related to the concept of a **secondary dominant**. A secondary 
 The harmonic system can easily be integrated into traditional chord notation, by just replacing the note names with their harmonic labels, for example:
 
 $$
-A\flat_{\text{maj7}} \quad E_\flat \quad B_\flat \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m
+A♭_{\text{maj7}} \quad E♭ \quad B♭ \quad G_7 \quad C_{\text{m}} \quad \rightarrow \quad 0_{\text{maj7}} \quad 1 \quad 2 \quad 4_7 \quad 3_m
 $$
 
 This way, the system can already be used effectively. However, this notation is not optimal. For example in $4_7$, numbers are used both to indicate the root note and the type of the chord, which can be a bit confusing.

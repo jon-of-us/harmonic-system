@@ -59,12 +59,12 @@ The main major chord of the key, the "tonic" chord or $I$-chord, has the root no
 *   **T-**: The subdominant chord ($IV$). In C-major: F ($3$).
 *   **T+**: The dominant chord ($V$). In C-major: G ($5$).
 
-Similarly, the main minor chord, the "parallel minor", or $vi$-chord, has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for parallel *minor* or sub*mediant*). The other two minor chords are named relative to it:
+Similarly, the main minor chord, the "relative minor", or $vi$-chord, has the root note with harmonic label $7$(A), which is in the middle between the other minor chords ($6$ and $8$). We will call this chord the $M$ chord (for relative *minor* or sub*mediant*). The other two minor chords are named relative to it:
 *   **M**: The relative minor chord ($vi$). In C-major: Am ($7$).
 *   **M-**: The supertonic chord ($ii$). In C-major: Dm ($6$).
 *   **M+**: The mediant chord ($iii$). In C-major: Em ($8$).
 
-This naming is intended to be used for both major and minor keys. In a minor key, the main minor chord (the tonic in the minor key) is still called the $M$ chord, and $T$ refers to its parallel major chord. Effectively major and (natural) minor keys are not distinguished. This is an important distinction to classical music theory. 
+This naming is intended to be used for both major and minor keys. In a minor key, the main minor chord is still called the $M$, even though it is the tonic in classical theory. $T$ refers to its relative major chord. Effectively major and (natural) minor keys are not distinguished. This is an important distinction from classical music theory. 
 
 ### Chord progressions
 The new note labels also make it easier to understand chord progressions in many cases. An example is the $ii - V - I$ progression, which is considered the most fundamental chord progression in Jazz music. It might seem a bit arbitrary at first, but it turns out to be a sequence of chords descending in fifths and ending on the tonic chord. This means that in the new system the progression are just three consecutive (descending) numbers. For example, in the key of C major, it is given by $6, 5, 4$.

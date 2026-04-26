@@ -176,7 +176,7 @@ When learning about music theory in school, I found it sad that something as bea
 
 So I started to experiment with different ways to simplify theory and notation. When I realized that many harmonic relationships are based on the fifth, I was surprised to discover such a nice and intuitive system. It was amazing to see how many concepts that I didn't understand before fell into place with the Harmonic System.
 
-I have been learning the piano for the last 3 years using this system, and can confidently say that it makes understanding music much easier. Even if you don't actively study the theory, just seeing the harmonic labels on the sheet music makes you discover patterns that are not visible with traditional note names. I hope you like the Harmonic System as much as I do! If you have any feedback or suggestions, feel free to reach out.
+For the last three years, I have been learning the piano using this system. During this time, I refined and improved it many times and developed the chord-converter tool. I can confidently say that it has made understanding music much easier for me. Even if you don't actively study the theory, just seeing the harmonic labels on the sheet music makes you discover patterns that are not visible with traditional note names. I hope you like the Harmonic System as much as I do! If you have any feedback or suggestions, feel free to reach out. 
 
 Jonas
 

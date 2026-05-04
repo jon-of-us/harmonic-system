@@ -31,8 +31,8 @@ This means by memorizing the harmonic labels, you have also memorized the circle
 When learning about music theory, it was very unclear to me why the major scale has the specific pattern of whole and half steps that it does (W W H W W W H). Why not a different pattern?
 
 It turns out that this gets much clearer in the Harmonic System.
-As an example, consider the C-major scale: C, D, E, F, G, A and B. Their harmonic labels are $4$, $6$, $8$, $3$, $5$, $7$, $9$ respectively.
-These are actually just $7$ **consecutive numbers** from $3$ to $9$! The pattern of whole and half steps is just a side effect of picking seven consecutive harmonic labels. 
+As an example, consider the C-major scale: C, D, E, F, G, A and B. Their harmonic labels are $4, 6, 8, 3, 5, 7, 9$ respectively. Sorting these, gives $3, 4, 5, 6, 7, 8, 9$ -
+they are actually just $7$ **consecutive numbers** from $3$ to $9$! The pattern of whole and half steps is just a side effect of picking seven consecutive harmonic labels. 
 
 Similarly, any other major scale also consists of $7$ consecutive harmonic labels (consecutive on the clock, so after 11 comes 0 again). The root note of the scale is the second-lowest number in this sequence.
 

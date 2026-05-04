@@ -34,7 +34,7 @@ It turns out that this gets much clearer in the Harmonic System.
 As an example, consider the C-major scale: C, D, E, F, G, A and B. Their harmonic labels are $4$, $6$, $8$, $3$, $5$, $7$, $9$ respectively.
 These are actually just $7$ **consecutive numbers** from $3$ to $9$! The pattern of whole and half steps is just a side effect of picking seven consecutive harmonic labels. 
 
-Similarly, any other major scale also consists of $7$ consecutive harmonic labels (consecutive on the clock). The root note of the scale is the second-lowest number in this sequence.
+Similarly, any other major scale also consists of $7$ consecutive harmonic labels (consecutive on the clock, so after 11 comes 0 again). The root note of the scale is the second-lowest number in this sequence.
 
 This observation maybe clarifies a bit, why labelling the notes in steps of fifths is so useful. The major scale was not explicitly designed to have this nice property - it's just notes that sound good together.
 But since the fifth is the most consonant interval (apart from the octave), it turns out that notes with close harmonic labels tend to sound consonant together. So it makes sense that the major scale, which consists of seven notes that sound most consonant together, are also the ones that have consecutive harmonic labels.
